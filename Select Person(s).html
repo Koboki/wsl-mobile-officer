@@ -1,0 +1,52 @@
+<html lang='en' dir="rtl">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>Select Person(s)</title>
+	<link href='../1.Common-Assets/css/eventa-icons.css' rel='stylesheet' />
+	<link href='../1.Common-Assets/css/app-icons.css' rel='stylesheet' />
+	<link href='../1.Common-Assets/css/common-styles.css' rel='stylesheet' />
+	<link href='../1.Common-Assets/css/styles.ar.css' rel='stylesheet' />
+	<script type='text/javascript' src='../1.Common-Assets/Scripts/jquery-3.1.1.min.js'></script>
+	<script type='text/javascript' src='../1.Common-Assets/Scripts/scripts.js'></script>
+</head>
+
+<body>
+	<dialog class="dialog" open>
+		<header class="dialog-header">
+			<i class="dialog-header__back"></i>
+			<i class="dialog-header__icon appicon-filter push-left"></i>
+		</header>
+		<section class="content-container">
+			<div class="box-white">
+				<div class="pm bb frcs" data-elName="box" data-multiple="10">
+					<div class="checkbox mlm" data-elName="boxCheckbox"></div>
+					<img class="image image-md mlm" src="1.Common-Assets/images/people/person1.jpg" data-multipleImages>
+					<div>
+						<h4 class="mbm" data-multipleNames>السيد محمد زيد خالد أحمد</h4>
+						<p class="person-pos">المدير التنفيذي</p>
+					</div>
+				</div>
+				<div class="frcc pm">
+					<button class="show-more">
+						<span>المزيد</span>
+						<i class="evicon-chevron-left"></i>
+					</button>
+				</div>
+			</div>
+			<button class="btn-capsule btn-secondary width-full mtm">حفظ</button>
+		</section>
+	</dialog>
+	
+	<script>
+		
+		$('[data-elName="box"]').on("click", function () {
+			$(this).find($('[data-elName="boxCheckbox"]')).toggleClass("checked");
+		});
+		
+	</script>
+</body>
+
+</html>

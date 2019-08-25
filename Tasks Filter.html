@@ -1,0 +1,94 @@
+<html lang='en' dir="rtl">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>Tasks Filter</title>
+	<link href='1.Common-Assets/css/eventa-icons.css' rel='stylesheet' />
+	<link href='1.Common-Assets/css/app-icons.css' rel='stylesheet' />
+	<link href='1.Common-Assets/css/common-styles.css' rel='stylesheet' />
+	<link href='1.Common-Assets/css/styles.ar.css' rel='stylesheet' />
+	<script type='text/javascript' src='1.Common-Assets/Scripts/jquery-3.1.1.min.js'></script>
+	<script type='text/javascript' src='1.Common-Assets/Scripts/scripts.js'></script>
+</head>
+
+<body>
+	<dialog class="dialog" open="">
+		<header class="dialog-header">
+			<i class="dialog-header__back"></i>
+			<h4>تصفية</h4>
+		</header>
+		<section class="dialog-body">
+			<div class="box-white">
+				<div class="frcs pm" data-elName="box">
+					<div class="checkbox" data-elName="boxCheckbox"></div>
+					<span class="status-circle status-circle--all mhm"></span>
+					<span>الكل</span>
+					<span class="color-secondary push-left">123 مهمة</span>
+				</div>
+				<div class="frcs pm" data-elName="box">
+					<div class="checkbox" data-elName="boxCheckbox"></div>
+					<span class="status-circle status-circle--new mhm"></span>
+					<span>جديدة</span>
+					<span class="color-secondary push-left">10 مهمة</span>
+				</div>
+				<div class="frcs pm" data-elName="box">
+					<div class="checkbox" data-elName="boxCheckbox"></div>
+					<span class="status-circle status-circle--assigned mhm"></span>
+					<span>مسندة</span>
+					<span class="color-secondary push-left">10 مهمة</span>
+				</div>
+				<div class="frcs pm" data-elName="box">
+					<div class="checkbox" data-elName="boxCheckbox"></div>
+					<span class="status-circle status-circle--inprogress mhm"></span>
+					<span>قيد التنفيذ</span>
+					<span class="color-secondary push-left">10 مهمة</span>
+				</div>
+				<div class="frcs pm" data-elName="box">
+					<div class="checkbox" data-elName="boxCheckbox"></div>
+					<span class="status-circle status-circle--complete mhm"></span>
+					<span>منجزة</span>
+					<span class="color-secondary push-left">10 مهمة</span>
+				</div>
+				<div class="frcs pm" data-elName="box">
+					<div class="checkbox" data-elName="boxCheckbox"></div>
+					<span class="status-circle status-circle--closed mhm"></span>
+					<span>مغلقة</span>
+					<span class="color-secondary push-left">10 مهمة</span>
+				</div>
+				<div class="frcs pm" data-elName="box">
+					<div class="checkbox" data-elName="boxCheckbox"></div>
+					<span class="status-circle status-circle--late mhm"></span>
+					<span>متأخرة</span>
+					<span class="color-secondary push-left">10 مهمة</span>
+				</div>
+				<div class="frcs pm" data-elName="box">
+					<div class="checkbox" data-elName="boxCheckbox"></div>
+					<span class="status-circle status-circle--postponed mhm"></span>
+					<span>مؤجلة</span>
+					<span class="color-secondary push-left">10 مهمة</span>
+				</div>
+				<div class="frcs pm" data-elName="box">
+					<div class="checkbox" data-elName="boxCheckbox"></div>
+					<span class="status-circle status-circle--tempstop mhm"></span>
+					<span>موقفة مؤقتًا</span>
+					<span class="color-secondary push-left">10 مهمة</span>
+				</div>
+			</div>
+		</section>
+		<footer class="dialog-footer">
+			<button class="btn-capsule btn-secondary width-full">تطبيق التصفية</button>
+		</footer>
+	</dialog>
+	
+	<script>
+		
+		$('[data-elName="box"]').on("click", function () {
+			$(this).find($('[data-elName="boxCheckbox"]')).toggleClass("checked");
+		});
+		
+	</script>
+</body>
+
+</html>

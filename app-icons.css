@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'app-icons';
+  src:
+    url('../fonts/app-icons.ttf?86s8bn') format('truetype'),
+    url('../fonts/app-icons.woff?86s8bn') format('woff'),
+    url('../fonts/app-icons.svg?86s8bn#app-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="appicon-"], [class*=" appicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'app-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.appicon-back:before {
+  content: "\e900";
+}
+.appicon-phone:before {
+  content: "\e901";
+}
+.appicon-car:before {
+  content: "\e902";
+}
+.appicon-check-circle:before {
+  content: "\e903";
+}
+.appicon-cross:before {
+  content: "\e904";
+}
+.appicon-contacts:before {
+  content: "\e905";
+}
+.appicon-document:before {
+  content: "\e906";
+}
+.appicon-email:before {
+  content: "\e907";
+}
+.appicon-events:before {
+  content: "\e908";
+}
+.appicon-filter:before {
+  content: "\e909";
+}
+.appicon-gate:before {
+  content: "\e90a";
+}
+.appicon-hand:before {
+  content: "\e90b";
+}
+.appicon-hotel:before {
+  content: "\e90c";
+}
+.appicon-id-card:before {
+  content: "\e90d";
+}
+.appicon-indvidual-contact .path1:before {
+  content: "\e90e";
+  color: rgb(255, 255, 255);
+}
+.appicon-indvidual-contact .path2:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(35, 33, 33);
+}
+.appicon-location:before {
+  content: "\e910";
+}
+.appicon-orgnaization:before {
+  content: "\e911";
+}
+.appicon-passport:before {
+  content: "\e912";
+}
+.appicon-plane:before {
+  content: "\e913";
+}
+.appicon-edit:before {
+  content: "\e914";
+}
+.appicon-speaker:before {
+  content: "\e915";
+}
+.appicon-qr-code:before {
+  content: "\e916";
+}
+.appicon-search:before {
+  content: "\e917";
+}
+.appicon-plane-paper:before {
+  content: "\e918";
+}
+.appicon-tasks:before {
+  content: "\e919";
+}
+.appicon-time:before {
+  content: "\e91a";
+}
+.appicon-vip:before {
+  content: "\e91b";
+}
+.appicon-doc-blank:before {
+  content: "\e91c";
+}
+.appicon-doc-text:before {
+  content: "\e91d";
+}
+.appicon-cog:before {
+  content: "\e91e";
+}
+.appicon-global:before {
+  content: "\e91f";
+}
+.appicon-person:before {
+  content: "\e920";
+}
